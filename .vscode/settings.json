@@ -1,0 +1,8 @@
+{
+    "yaml.schemas": {
+        "kubernetes://schema/v1@pod": [
+            "file:///home/sanskar/mlh/go-k8s-ecs-restapi/web-pod.yaml",
+            "file:///home/sanskar/mlh/go-k8s-ecs-restapi/postgres-pod.yaml"
+        ]
+    }
+}

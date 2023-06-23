@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: db
+  labels:
+    name: postgres-Service
+
+spec:
+  selector:
+    name: db-pod
+    type: postgres-db-pod
+  ports:
+  - port: 5432
+    targetPort: 5432

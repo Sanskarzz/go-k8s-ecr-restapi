@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: db-pod
+  labels:
+    name: db-pod
+    type: postgres-db-pod
+spec:
+  containers:
+    - name: db
+      image: sanskardevops/postgres:alpine
+      ports: 
+        - containerPort: 5432
+      env:
+        - name: POSTGRES_USER
+          value: "sanskarrestapi"
+        - name: POSTGRES_PASSWORD
+          value: "sanskarrestapi"
+        - name: POSTGRES_DB
+          value: "sanskarrestapi"
+      
+      
+      resources:
+        limits:
+          memory: 512Mi
+          cpu: "1"
+        requests:
+          memory: 256Mi
+          cpu: "0.2"
+    
+        
