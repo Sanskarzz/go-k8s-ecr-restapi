@@ -22,11 +22,19 @@
  EC2 Launch 
 - We have to manage the underlying EC2 instances 
 - We have ECS control plane which is brain behind the operation on container
-- We have Cluster
+- We have launch Cluster
 - We have manage dependency on EC2 we have to install Docker to run containers 
 - We have to install the ECS agents so we can connect the control plane to instance
 - Installing firewall to access certain ports
 - Apply routine patches so that our servers all up to date
 - The only think ECS does is manage the containers it deploys the containers onto those ec2 instances
 
-
+ ECS Fargate Launch 
+- It follows a serverless architecture
+- There will we no EC2 intances ,no physical servers
+- We only have to create application and send it to ECS
+- ECS is going to do that it will see cluster their are servers or not 
+- Then tell to Fargate and Fargate will create servers on demand Fargate is going to handle
+- Once Fargate create demand then ECS can then deploy our container onto newly created infrastructure 
+- We do not need to provision or maintain the ec2 servers fargate does all of that for you under the hood 
+- We only pay for what we use 
