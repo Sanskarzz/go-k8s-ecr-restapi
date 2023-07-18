@@ -7,7 +7,7 @@ import (
 )
 
 func Home(c *fiber.Ctx) error {
-	return c.SendString("Hello, World!")
+	return c.SendString("Hello, himanshu!")
 }
 
 func CreateFact(c *fiber.Ctx) error {

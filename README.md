@@ -38,3 +38,19 @@
 - Once Fargate create demand then ECS can then deploy our container onto newly created infrastructure 
 - We do not need to provision or maintain the ec2 servers fargate does all of that for you under the hood 
 - We only pay for what we use 
+
+ ECS Task Defination 
+- It is a Blueprint that describes how container should be launch
+- It contains how much CPU/Memory should be use
+- It contains which image / ports / volume should be use
+- Basically it is going to contain all of the configuration that a docker-compose file should contains
+- Task
+    - An instance of a Task Definition is knows as Task
+    - If we want two intances we would have two separate Tasks
+
+ ECS Services 
+- A service ensures that a certain number of Task are running at all times
+- Restarts containers that have exited/crashed
+- EC2 instance fails, the Service will restart task on a working EC2
+- We can also assign a load balancer to the service and load balancer can be assigned to route external traffic to your service 
+ 

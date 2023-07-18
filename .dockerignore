@@ -1,0 +1,7 @@
+README.md
+postgres-pod.yaml
+postgres-service.yaml
+postgres-deploy.yaml
+web-deploy.yaml
+web-service.yaml
+web-pod.yaml

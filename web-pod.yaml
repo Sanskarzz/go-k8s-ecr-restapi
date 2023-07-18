@@ -9,13 +9,14 @@ spec:
   containers:
     - name: web-app
       image: sanskardevops/go-k8s-ecs-restapi:latest
+      env:
+        - name: POSTGRES_USER
+          value: "sanskarrestapi"
+        - name: POSTGRES_PASSWORD
+          value: "sanskarrestapi"
+        - name: POSTGRES_DB
+          value: "sanskarrestapi"
       ports: 
         - containerPort: 3000
-      resources:
-        limits:
-          memory: 512Mi
-          cpu: "1"
-        requests:
-          memory: 256Mi
-          cpu: "0.2" 
+      
      
