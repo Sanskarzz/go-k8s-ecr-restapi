@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
     - name: db
-      image: sanskardevops/postgres:alpine
+      image: postgres:alpine
       ports: 
         - containerPort: 5432
       env:
@@ -19,7 +19,7 @@ spec:
         - name: POSTGRES_DB
           value: "sanskarrestapi"
       
-      
+
       
     
         
