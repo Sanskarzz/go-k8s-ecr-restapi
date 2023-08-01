@@ -13,3 +13,5 @@ RUN go mod download
 RUN go mod tidy
 
 CMD ["air", "./cmd/main.go", "-b", "0.0.0.0"]
+
+EXPOSE 3000
